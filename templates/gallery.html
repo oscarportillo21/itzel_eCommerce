@@ -16,33 +16,31 @@
 
 <body>
     <div class="container-fluid">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a href="/"><img class="navbar-brand logo" src="{{ url_for('static', filename='img/Itzel.png') }}" alt="itzellogo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/gallery">Gallery <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/stickers">Stickers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/branding">Branding/Logo</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mr">
-                        <li class="nav-item justify-content-end">
-                            <a class="nav-link" href="/shoppingcart">Shopping Cart( )</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+            <a href="/"><img class="navbar-brand logo" src="{{ url_for('static', filename='img/Itzel.png') }}" alt="itzellogo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/gallery">Gallery <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stickers">Stickers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/branding">Branding/Logo</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr">
+                    <li class="nav-item justify-content-end">
+                        <a class="nav-link" href="/shoppingcart">Shopping Cart( )</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="jumbotron row">
             <div class="card col-lg-3 border-0 bg-transparent">
                 <img class="card-img-top gal_img" src="{{ url_for('static', filename='img/IMG_0464.PNG') }}" alt="Card image cap">
